@@ -381,7 +381,7 @@ h2.resp-accordion {
 	background: #000;
 }
 .grid img {
-	opacity: 0.8;
+	opacity: 0.5;
 }
 .grid .figcaption {
     padding: 2em 2.5em;
@@ -437,7 +437,6 @@ h2.resp-accordion {
     overflow: hidden;
     padding: 0.5em 0;
 	-moz-opacity: 0;
-    opacity: 0;
     text-transform: uppercase;
     font-size: 2em;
     color: #fff;
