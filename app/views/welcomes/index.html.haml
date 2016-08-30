@@ -13,8 +13,6 @@
     %script{:src => "/assets/jquery-1.11.1.min.js"}
     %link{:href => "//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic", :rel => "stylesheet", :type => "text/css"}/
-    %script{:src => "/assets/move-top.js", :type => "text/javascript"}
-    %script{:src => "/assets/easing.js", :type => "text/javascript"}
     :javascript
       jQuery(document).ready(function($) {
       	$(".scroll").click(function(event){		
@@ -77,8 +75,8 @@
         %h3.title About Me
         .col-md-7.col-xs-7.about-left
           %p
-            I'm Kalyani Dhamdhere from Talegaon Dhamdhere(Pune). I'm 23 years old. I have completed my graduation B.E.(IT) from Pune University.I have total 1.8 years experience in the Ruby on Rails. I started my career as an Junoir Trainee in the Axenic Tecnologies for the period of FEB 2015 to OCT 2015. 
-            For better opportunities, I have joined Birdvision Consulting Pvt, Ltd in NOV 2015 and working to till date. Now I'm working as a Junior Techical Analyst.
+            I'm Kalyani Dhamdhere from Talegaon Dhamdhere(Pune). I'm 23 years old. I have completed my graduation B.E.(IT) from Pune University.I have total 1.8 years experience in the Ruby on Rails. I started my career as a Junoir Trainee in the Axenic Tecnologies for the period of FEB 2015 to OCT 2015. 
+            For better opportunities, I have joined Birdvision Consulting Pvt Ltd in NOV 2015 and working to till date. Now I'm working as a Junior Techical Analyst.
           %p About my family, My family has 4 members. My father,my mother, my brother and me. My Father is a farmer and brother have completed MBA (Marketing) from Pune University.
           %p  I have good communication skills. I know Hindi, Marathi and English. I look forward to learn new thinks and own it.
         .col-md-5.col-xs-5.about-right
@@ -112,7 +110,7 @@
               %span.glyphicon.glyphicon-briefcase
               Birdvision Consulting Pvt. Ltd.
             .text-justify
-              %p Started working as Junior Tecnical Analyst from Nov 2015.Worked on 2 projects from Nov 2016 to till date.Worked on CEM-Contest & Compaigns and Adzfone.
+              %p Started working as Junior Tecnical Analyst from Nov 2015.Worked on 2 projects from Nov 2015 to till date.Worked on CEM-Contest & Compaigns and Adzfone.
               %p ADZFONE - Sign up and link Business Phones to Adzfone.Let Adzfone know when customers call you.Adzfone delivers digital brochure to your customers with more offers, content, easy contactablity across any media
               %p CEM-Contest & Compaign - Empowers your customers to do your marketing for you. Just create a contest that encompasses multiple marketing channel and trigger an exponential increase in your fan base.
             
@@ -167,9 +165,9 @@
           .col-md-6.col-xs-6.bar-grids
             %h6
               Ruby on Rails
-              %span 75%
+              %span 65%
             .progress
-              .progress-bar.progress-bar-striped.active{:style => "width: 75%"}
+              .progress-bar.progress-bar-striped.active{:style => "width: 65%"}
             %h6
               UI DESIGN &amp; DEVELOPER
               %span 50%
@@ -177,20 +175,20 @@
               .progress-bar.progress-bar-striped.active{:style => "width: 50%"}
             %h6
               AJAX
-              %span 70%
+              %span 60%
             .progress
-              .progress-bar.progress-bar-striped.active{:style => "width: 70%"}
+              .progress-bar.progress-bar-striped.active{:style => "width: 60%"}
             %h6
               HTML/CSS
-              %span 70%
+              %span 60%
             .progress
-              .progress-bar.progress-bar-striped.active{:style => "width: 70%"}
+              .progress-bar.progress-bar-striped.active{:style => "width: 60%"}
           .col-md-6.col-xs-6.bar-grids
             %h6
               JAVASCRIPT
-              %span 65%
+              %span 60%
             .progress
-              .progress-bar.progress-bar-striped.active{:style => "width: 65%"}
+              .progress-bar.progress-bar-striped.active{:style => "width: 60%"}
             %h6
               Git &amp; Heroku
               %span 50%
@@ -198,9 +196,9 @@
               .progress-bar.progress-bar-striped.active{:style => "width: 50%"}
             %h6
               BOOTSTRAP FRAMEWORK
-              %span 80%
+              %span 60%
             .progress
-              .progress-bar.progress-bar-striped.active{:style => "width: 80%"}
+              .progress-bar.progress-bar-striped.active{:style => "width: 60%"}
           .clearfix
     #projects.portfolio
       .container
@@ -333,11 +331,6 @@
           		fit: true   // 100% fit in a container
           	});
           });
-        %script{:src => "/assets/jquery.swipebox.min.js"}
-        :javascript
-          jQuery(function($) {
-          	$(".swipebox").swipebox();
-          });
     #contact.welcome.contact
       .container
         %h3.title Contact Us
@@ -356,17 +349,4 @@
                 %textarea{:name => "Message", :placeholder => "Message", :required => ""}
                 %input{:type => "submit", :value => "SUBMIT"}/
           .clearfix
-    :javascript
-      $(document).ready(function() {
-      
-      	var defaults = {
-      		containerID: 'toTop', // fading element id
-      		containerHoverID: 'toTopHover', // fading element hover id
-      		scrollSpeed: 1200,
-      		easingType: 'linear' 
-      	};
-      	
-      	$().UItoTop({ easingType: 'easeOutQuart' });
-      	
-      });
     %script{:src => "/assets/bootstrap.js"}
