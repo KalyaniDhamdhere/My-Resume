@@ -24,38 +24,38 @@
       	});
       });
   %body
-    #home.banner
+    #home.banner{style:"background:url(/assets/image3.jpg);background-size:cover"}
       .banner-info
         .container
-          .col-md-3.header-left
-            %img{:alt => "", :src => "/assets/img1.jpg"}/
-          .col-md-9.header-right
-            %h2 Hello
-            %h1 I'm Kalyani Dhamdhere	
-            %h6 Ruby On Rails Developer
+          -# .col-md-3.header-left
+            -# %img{:alt => "", :src => "/assets/img1.jpg"}/
+          .col-md-12.col-xs-12
+            %h2{style:"color: white;"} Hello
+            %h1{style:"color: white;"} I'm Kalyani Dhamdhere	
+            %h6{style:"color: white;"} Ruby On Rails Developer
             %ul.address
               %li
                 %ul.address-text
                   %li
-                    %b D.O.B
-                  %li 24th March, 1993
+                    %b{style:"color: white;"} D.O.B
+                  %li{style:"color: white;"} 24th March, 1993
               %li
                 %ul.address-text
                   %li
-                    %b ADDRESS
-                  %li Talegaon Dhamdhere, Pune
+                    %b{style:"color: white;"} ADDRESS
+                  %li{style:"color: white;"} Talegaon Dhamdhere, Pune
               %li
                 %ul.address-text
                   %li
-                    %b E-MAIL
+                    %b{style:"color: white;"} E-MAIL
                   %li
-                    %a{:href => "mailto:kalyani.d2404@gmail.com"} kalyani.d2404@gmail.com
+                    %a{:href => "mailto:kalyani.d2404@gmail.com",style:"color: white;"} kalyani.d2404@gmail.com
               %li
                 %ul.address-text
                   %li
-                    %b WEBSITE
+                    %b{style:"color: white;"} WEBSITE
                   %li
-                    %a{:href => "https://my-resume-24.herokuapp.com",:target=> "_blank"} www.kalyanidhamdhere.com
+                    %a{:href => "https://my-resume-24.herokuapp.com",:target=> "_blank",style:"color: white;"} www.kalyanidhamdhere.com
           .clearfix
     .top-nav.wow
       .container
