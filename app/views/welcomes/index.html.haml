@@ -11,6 +11,9 @@
     %link{:href => "/assets/style.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/assets/swipebox.css", :rel => "stylesheet"}/
     %script{:src => "/assets/jquery-1.11.1.min.js"}
+    %link{:href => "/assets/enjoyhint.css", :rel => "stylesheet"}/
+    %script{:src => "/assets/enjoyhint.min.js"}
+    %script{:src => "/assets/template.js"}
     %link{:href => "//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic", :rel => "stylesheet", :type => "text/css"}/
     :javascript
@@ -67,12 +70,12 @@
                 %a.scroll{:href => "#skills"} Skills
               %li
                 %a.scroll{:href => "#projects"} My Projects
-              %li
-                %a.scroll{:href => "#contact"} Contact
+              -# %li
+                -# %a.scroll{:href => "#contact"} Contact
             .clearfix
     #about.about
       .container
-        %h3.title About Me
+        %h3.title.first-tab About Me
         .col-md-7.col-xs-7.about-left
           %p
             I'm Kalyani Dhamdhere from Talegaon Dhamdhere(Pune). I'm 23 years old. I have completed my graduation B.E.(IT) from Pune University.I have total 1.8 years experience in the Ruby on Rails. I started my career as a Junoir Trainee in the Axenic Tecnologies for the period of FEB 2015 to OCT 2015. 
@@ -101,7 +104,7 @@
         .clearfix
     #work.work
       .container
-        %h3.title Work Experience
+        %h3.title.second-tab Work Experience
         .work-info
           .col-md-6.col-xs-6.work-left
             %h4 Nov 2016 - Present
@@ -130,7 +133,7 @@
           .clearfix
     #education.education
       .container
-        %h3.title Education
+        %h3.title.third-tab Education
         .work-info
           .col-md-6.col-xs-6.work-left
             %h4 Bachelor Degree - 2014
@@ -160,7 +163,7 @@
           .clearfix
     #skills.skills
       .container
-        %h3.title Skills
+        %h3.title.fourth-tab Skills
         .skills-info
           .col-md-6.col-xs-6.bar-grids
             %h6
@@ -202,7 +205,7 @@
           .clearfix
     #projects.portfolio
       .container
-        %h3.title.wow.zoomInLeft.animated{"data-wow-delay" => ".5s"} My Projects
+        %h3.fifth-tab.title.wow.zoomInLeft.animated{"data-wow-delay" => ".5s"} My Projects
         .sap_tabs
           #horizontalTab{:style => "display: block; width: 100%; margin: 0px;"}
             %ul.resp-tabs-list.wow.fadeInUp.animated{"data-wow-delay" => ".7s"}
@@ -331,22 +334,35 @@
           		fit: true   // 100% fit in a container
           	});
           });
-    #contact.welcome.contact
-      .container
-        %h3.title Contact Us
-        .contact-row
-          .col-md-12.contact-right
-            .address-left
-              %p
-                E-mail :
-                %a{:href => "mailto:kalyani.d2404@gmail.com"} kalyani.d2404@gmail.com
-            .clearfix
-            .contact-form
-              %form{:action => "#", :method => "post"}
-                %input{:name => "Name", :placeholder => "Name", :required => "", :type => "text"}/
-                %input.email{:name => "Email", :placeholder => "Email", :required => "", :type => "text"}/
-                %input.phone{:name => "phone", :placeholder => "Phone", :required => "", :type => "text"}/
-                %textarea{:name => "Message", :placeholder => "Message", :required => ""}
-                %input{:type => "submit", :value => "SUBMIT"}/
+    / Start of Tawk.to Script
+    :javascript
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/57c7d203416c00672f65ea80/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    / End of Tawk.to Script
+
+    -# #contact.welcome.contact
+      -# .container
+        -# %h3.title.sixth-tab Contact Us
+        -# .contact-row
+          -# .col-md-12.contact-right
+            -# .address-left
+              -# %p
+                -# E-mail :
+                -# %a{:href => "mailto:kalyani.d2404@gmail.com"} kalyani.d2404@gmail.com
+            -# .clearfix
+            -# .contact-form
+              -# %form{:action => "/users/register_me", :method => "post"}
+                -# %input{:name => "Name", :placeholder => "Name", :required => "", :type => "text"}/
+                -# %input.email{:name => "Email", :placeholder => "Email", :required => "", :type => "text"}/
+                -# %input.phone{:name => "phone", :placeholder => "Phone", :required => "", :type => "text"}/
+                -# %textarea{:name => "Message", :placeholder => "Message", :required => ""}
+                -# %input{:type => "submit", :value => "SUBMIT"}/
           .clearfix
     %script{:src => "/assets/bootstrap.js"}
